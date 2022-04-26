@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController
 class TestController {
 
     @GetMapping("/api/test")
-    fun test() = "test2"
+    fun test() = "test3"
 
 }
