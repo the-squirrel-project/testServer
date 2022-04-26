@@ -42,3 +42,11 @@ tasks.jacocoTestReport {
         xml.required.set(true)
     }
 }
+
+sonarqube {
+    properties {
+        property("sonar.host.url", "https://sonarcloud.io")
+        property("sonar.organization", "the-squirrel-project")
+        property("sonar.projectKey", "testServer")
+    }
+}
