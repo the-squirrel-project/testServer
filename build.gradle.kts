@@ -47,6 +47,6 @@ sonarqube {
     properties {
         property("sonar.host.url", "https://sonarcloud.io")
         property("sonar.organization", "the-squirrel-project")
-        property("sonar.projectKey", "testServer")
+        property("sonar.projectKey", "the-squirrel-project_testServer")
     }
 }
