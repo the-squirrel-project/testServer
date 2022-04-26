@@ -40,7 +40,6 @@ tasks.withType<Test> {
 tasks.jacocoTestReport {
     reports {
         xml.required.set(true)
-        xml.setEnabled(true)
     }
 }
 
@@ -51,18 +50,3 @@ sonarqube {
         property("sonar.projectKey", "testServer")
     }
 }
-
-//tasks.jacocoTestReport {
-//
-//    reports {
-//        xml.enabled true
-//    }
-//}
-//
-//sonarqube {
-//    properties {
-//        property 'sonar.host.url', 'https://sonarcloud.io'
-//        property 'sonar.organization', 'sonarsource'
-//        property 'sonar.projectKey', 'SonarSource_sonarcloud-github-action-samples'
-//    }
-//}
